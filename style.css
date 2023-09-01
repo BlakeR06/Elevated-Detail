@@ -1,0 +1,282 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.topBar {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBar li {
+    flex: 1;
+}
+
+.topBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 3em;
+    border-left: 2px solid rgba(255,255,255, .1);
+    border-right: 2px solid black;
+    border-bottom: 2px solid rgba(255,255,255, .1);
+}
+
+.topBar li a:hover {
+    background-color: #555;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100vh;
+    background-image: url('ElevatedDetailsLogo.jpg');
+    background-size: contain; /* Change this value to 'contain' */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.infoContainer {
+    margin-top: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    padding: 150px 40px 150px 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border: 3px solid darkred;
+}
+
+.infoContainer h1{
+    text-align: center;
+    font-size: 5em;
+    color: darkred;
+}
+
+.infoContainer h2{
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+.infoContainer p{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(58, 58, 58);
+}
+
+.servicesContainer {
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    padding: 150px 40px 150px 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border: 3px solid darkred;
+    text-align: center;
+}
+
+.servicesContainer h1{
+    text-align: center;
+    font-size: 5em;
+    color: darkred;
+}
+
+.servicesContainer h2{
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+.servicesContainer p{
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(58, 58, 58);
+}
+
+.servicesContainer ul {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(58, 58, 58);
+    list-style-type: square; /* Set bullet points to squares */
+    list-style-position: inside;
+    color: darkred;
+    overflow: hidden;
+}
+
+.scheduleNow {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.scheduleNow a{
+    text-decoration: none;
+    text-align: center;
+    background-color: darkred;
+    font-size: 2.5em;
+    color: lightgray;
+    width: 260px;
+    padding: 10px 10px 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 3px solid rgb(95, 95, 95);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.scheduleNow a:hover{
+    background-color: white;
+}
+
+.contactContainer {
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    padding: 150px 40px 150px 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border: 3px solid darkred;
+}
+
+.contactContainer h1{
+    text-align: center;
+    font-size: 5em;
+    color: darkred;
+}
+
+div.contactContainer img.phoneIconLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+div.contactContainer img.mailIconLogo {
+    width: 100px;
+    height: 100px; /* Adjust the maximum width of the image */
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contactContainer p{
+    margin-left: 150px;
+    margin-top: -70px;
+    font-size: 1.5em;
+}
+
+.scheduleNowContainer{
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    padding: 50px 40px 150px 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    border: 3px solid darkred;
+}
+
+.scheduleNowContainer h1{
+    text-align: center;
+    font-size: 5em;
+    color: darkred;
+}
+
+.scheduleNowContainer p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.scheduleNowContainer h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.scheduleNowContainer li{
+    font-size: 2vh;
+    padding-left: 30%;
+}
+
+.scheduleNowContainer ul{
+    font-size: 1.5vh;
+    list-style-type: square; /* Set bullet points to squares */
+    list-style-position: inside;
+}
+
+.warningText{
+    font-size: 1.7vh !important;
+}
+
+.backHomeButton {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.backHomeButton a{
+    text-decoration: none;
+    text-align: center;
+    background-color: darkred;
+    font-size: 2.5em;
+    color: lightgray;
+    width: 260px;
+    padding: 10px 10px 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 3px solid rgb(95, 95, 95);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.backHomeButton a:hover{
+    background-color: white;
+}
+
+.packagePrice{
+    color: rgb(165, 165, 165);
+    margin-left: 25px;
+    max-width: 70px;
+    border-radius: 20px;
+    border: 3px solid rgb(165, 165, 165);
+    padding: 0px 5px;
+}
+
+.movingCar{
+    height: 100px;
+    width: 300px;
+    background-image: url('redCar.png');
+    background-size: cover;
+    margin-left: -350px;
+    transform: scaleX(-1);
+}
